@@ -97,6 +97,11 @@ console.log(createEmployee("$500")); // Director
 
 console.log(executeWork(createEmployee(200))); // Getting to work
 console.log(executeWork(createEmployee(1000))); // Getting to director tasks
+
+// ✅ Example usage
+console.log(teachClass("Math")); // Teaching Math
+console.log(teachClass("History")); // Teaching History
+
 // Step 1: Define the string literal type
 type Subjects = "Math" | "History";
 
@@ -108,6 +113,6 @@ function teachClass(todayClass: Subjects): string {
   return "Teaching History";
 }
 
-// ✅ Example usage
+// Example usage
 console.log(teachClass("Math")); // Teaching Math
 console.log(teachClass("History")); // Teaching History
