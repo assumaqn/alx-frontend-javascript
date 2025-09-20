@@ -6,3 +6,15 @@ interface Teacher {
   location: string; // required
   [key: string]: any; // allows any other attribute like contract
 }
+interface Directors extends Teacher {
+  numberOfReports: number; // required attribute for Directors
+}
+const director1: Directors = {
+  firstName: "John",
+  lastName: "Doe",
+  fullTimeEmployee: true,
+  location: "London",
+  numberOfReports: 17,
+};
+
+console.log(director1);
