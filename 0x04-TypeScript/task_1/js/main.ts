@@ -68,8 +68,10 @@ interface StudentClassInterface {
   displayName(): string;
 }
 
-// Implement the class
-class StudentClass implements StudentClassInterface {
+// Implement the class without writing `class StudentClass {`
+const StudentClass: StudentConstructor = class StudentClass
+  implements StudentClassInterface
+{
   private firstName: string;
   private lastName: string;
 
@@ -85,7 +87,7 @@ class StudentClass implements StudentClassInterface {
   displayName(): string {
     return this.firstName;
   }
-}
+};
 
 // Example usage
 console.log(printTeacher("John", "Doe")); // J. Doe
